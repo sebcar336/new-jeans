@@ -1,0 +1,310 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Poppins,Arial, Helvetica, sans-serif;
+    color: white;
+    --rosa: #e77cc1;
+    --gris: #141414;
+    --negro: #000000;
+    --celeste: #1d8cd7;
+}
+
+/* Invisible */
+.movil-screen{
+    display: none;
+}
+
+/* LINKS */
+.link{
+    text-decoration: none;
+}
+
+body{
+    background-color: var(--negro);
+}
+
+/*Barra de navegación*/
+
+header{
+    position: sticky;
+    top: 0;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+nav{
+    height: 70px;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav ul{
+    width: 60%;
+    height: 60%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: var(--negro);
+    border-bottom: var(--rosa) 2px solid;
+    border-radius: 30px;
+    transition-duration: 200ms;
+    transition-property: border;
+}
+nav ul:hover{
+    transition-duration: 200ms;
+    border-bottom: var(--celeste) 2px solid;
+}
+nav ul a li{
+    text-decoration: none;
+    list-style: none;
+}
+
+/* Inicio */
+main{
+    width: 98vw;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0px;
+}
+.logo{
+    width: 60vw;
+    height: 42%;
+    display: flex;
+    position: absolute;
+    top: 35%;
+    background-color: var(--negro);
+    z-index: 1;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0px 80px 24px 5px var(--negro);
+}
+.logo img{
+    width: 70%;
+}
+.contendor-flecha-main{
+    position: relative;
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    rotate: 45deg;
+    box-shadow: 0 0 10px 5px #e77cc298;
+
+}
+.flecha-main{
+    position: absolute;
+    top: -1.3vh;
+    left: -0.6vw;
+    width: 20px;
+    height: 20px;
+    background-color: var(--negro);
+    box-shadow: 0 0 10px 5px #e77cc298;
+}
+.contenido-main{
+    position: sticky;
+    top: 50vh;
+    width: 45vw;
+    height: min-content;
+    padding: 100px,0,0,0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 16px;
+}
+
+/* TITULOS */
+
+.titulos{
+    position: relative;
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: min-content;
+}
+.titulos h2{
+    font-size: 50px;
+}
+.sombra-titulos{
+    position: absolute;
+    top: 0.7vh;
+    left: -2px;
+    font-size: 50px;
+    color: var(--negro);
+    text-align: center;
+    text-shadow:    1px  0px 2px var(--rosa),
+                    0px  1px 2px var(--rosa),
+                    -1px  0px 2px var(--rosa),
+                    0px -1px 2px var(--rosa);
+    z-index: -1;
+}
+
+/* Miembros */
+
+#Miembros{
+    padding-top: 100px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.contenedor-miembros {
+    width: 98vw;
+    display: flex;
+    justify-content: center;
+}
+.subcontenedor-miembros {
+    width: 15%;
+    margin: 20px;
+    border-radius: 15px 15px 15px 15px;
+    background-color: var(--gris);
+    overflow: hidden;
+    box-shadow: 0px 6px 5px 0px var(--rosa); 
+}
+.contenedor-txt-miembros {
+    padding: 10px 20px 20px 20px;
+    font-size: 12px;
+}
+.contenedor-txt-miembros h3{
+    font-size: 20px;
+    padding-bottom: 7px;
+}
+
+/* Canciones */
+
+#Canciones{
+    padding-top: 100px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.contenedor-cancion{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.subcontenedor-cancion {
+    width: 350px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    background-size: cover;
+    border-radius: 10px;
+}
+.contenedor-txt-cancion{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: 200ms background-color, box-shadow, color;
+    box-shadow: 0px 0px 5px 0px var(--rosa);
+    color: transparent;
+    border-radius: 10px;
+    text-decoration: none;
+}
+.contenedor-txt-cancion:hover{
+    transition: 200ms background-color, box-shadow, color;
+    background-color: #000000e2;
+    box-shadow: 0px 0px 5px 0px var(--celeste);
+    color: #fff;
+    text-decoration: underline;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer{
+    background-color: var(--gris);
+    text-align: center;
+}
+.contenedor-redes-sociales{
+    margin-top: 100px;
+    width: 99vw;
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+.subcontenedor-redes-sociales{
+    width: 50px;
+    height: 100px;
+    border-radius: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.redes-sociales{
+    width: 100%;
+    height: 50%;
+    background-size: cover;
+    margin-bottom: 10%;
+}
+@media screen and (max-width: 992px){
+    .movil-screen{
+        display: inline;
+    }
+    .pc-screen{
+        display: none;
+    }
+    body{
+        width: 98vw;
+    }
+    header{
+        top: 30px;
+    }
+    main{
+        width: 98vw;
+    }
+    .logo{
+        width: 95%;
+        height: 27%;
+        top: 40%;
+    }
+    .logo img{
+        width: 80%;
+    }
+    .contendor-flecha-main{
+        margin: 10px;
+    }
+    .flecha-main{
+        top: -.8vh;
+        left: -1.6vw;
+    }
+    .contenido-main{
+        width: 85vw;
+        height: 10px;
+        font-size: 14px;
+        margin-bottom: 100px;
+    }
+    #Miembros{
+        padding-top: 200px;
+        width: 98vw;
+    }
+    .contenedor-miembros {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .subcontenedor-miembros {
+        width: 70%;
+    }
+    #canciones{
+        width: 98vw;
+    }
+    .subcontenedor-cancion {
+        width: 300px;
+    }
+    .contenedor-txt-cancion{
+        width: 100%;
+    }
+    footer{
+        padding-top: 500px;
+        width: 100vw;
+        min-height: 300px;
+    }
+}
